@@ -1,0 +1,379 @@
+body {
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Space Grotesk";
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+
+
+
+.col-3{
+    background: url("images/bg-main-desktop.png");
+    width: 450px;
+    height: 817px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+
+
+}
+
+
+.firstcard{
+    
+    margin-top: 200px;
+    margin-left: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.secondcard{
+    margin-top: 490px;
+    margin-left: -350px;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    margin-left: -420px;
+    margin-top: 20px;
+}
+
+
+.cardnumber {
+    font-family: "Space Grotesk";
+    position: absolute;
+    margin-top: 135px;
+    margin-left: -420px;
+    font-size: 28px;
+    color: white;
+}
+
+.cardname{
+    position: absolute;
+    margin-left: -420px;
+    margin-top: 200px;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.expmonth{
+    font-size: 15px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -80px;
+    color: white;
+}
+
+.expyear{
+    font-size: 15px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -45px;
+    color: white;
+}
+
+.cvv{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: -90px;
+    font-size: 15px;
+    color: hsl(270, 3%, 87%);
+}
+
+
+.col-9 {
+    width: auto;
+    
+    
+}
+
+.cardholder {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 270px;
+    margin-left: 390px;
+    color: hsl(278, 68%, 11%);
+}
+
+.name {
+    position: absolute;
+    color: hsl(278, 68%, 11%);
+    margin-top: 300px;
+    margin-left: 390px;
+    width: 350px;
+    height:35px;
+    border-radius: 7px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+input:focus{
+    outline: none;
+}
+
+.card_number {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 380px;
+    margin-left: 390px;
+    color: hsl(278, 68%, 11%);
+    
+}
+
+.card_name {
+    position: absolute;
+    color: hsl(278, 68%, 11%);
+    margin-top: 410px;
+    margin-left: 390px;
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+
+.exp {
+    position: absolute;
+    font-size: 13px;
+    color: hsl(278, 68%, 11%);
+    margin-top: 500px;
+    margin-left: 390px;
+}
+
+.exp_month {
+    position: absolute;
+    color: hsl(278, 68%, 11%);
+    margin-top: 525px;
+    margin-left: 390px;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+
+}
+
+.exp_year {
+    position: absolute;
+    color: hsl(278, 68%, 11%);
+    margin-top: 525px;
+    margin-left: 500px;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+
+.cvv_text {
+    position: absolute;
+    font-size: 13px;
+    margin-top: 500px;
+    margin-left: 625px;
+    color: hsl(278, 68%, 11%);
+}
+
+.cvv_number {
+    position: absolute;
+    color: hsl(278, 68%, 11%);
+    margin-top: 525px;
+    margin-left: 625px;
+    width: 115px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+input {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(278, 68%, 11%);
+    padding: 10px;
+    padding-left: 15px;
+    font-family: "Space Grotesk";
+    border: 1;
+}
+
+.button {
+    background-color: hsl(278, 68%, 11%);
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 390px;
+    width: 377px;
+    height: 50px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    border: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-3 {
+        background:url("images/bg-main-mobile.png");
+        height: 200px;
+    }
+    .firstcard{
+    
+        margin-top: 110px;
+        margin-left: 50px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    img {
+        width: 300px;
+        margin-left: -20px;
+    }
+    .secondcard{
+        
+        margin-top: 20px;
+        margin-left: -240px;
+        position: relative;
+
+    }
+    
+    svg {
+        margin-left: -280px;
+    }
+
+
+        
+    .col-9{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .cardholder {
+
+        margin-top: 150px;
+        margin-left: 250px;
+        width: 200px;
+
+    }
+
+    .name {
+
+        margin-top: 180px;
+        margin-left: 400px;
+        width: 320px;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    .card_number {
+
+        margin-top: 280px;
+        margin-left: 250px;
+        width: 200px;
+
+        
+    }
+
+    .card_name {
+        margin-top: 310px;
+        margin-left: 400px;
+        width: 320px;
+    }
+
+
+    .exp {
+
+        margin-top: 440px;
+        margin-left: 300px;
+        width: 250px;
+    }
+
+    .exp_month {
+        margin-top: 470px;
+        margin-left: 140px;
+        width: 60px;
+
+    }
+
+    .exp_year {
+        margin-top: 470px;
+        margin-left: 340px;
+        width: 60px;
+    }
+
+
+    .cvv_text {
+        margin-top: 440px;
+        margin-left: 520px;
+    }
+
+    .cvv_number {
+        margin-top: 470px;
+        margin-left: 610px;
+        width: 100px;
+
+    }
+
+
+    .button {
+        margin-left: 400px;
+        margin-top: 580px;
+        width: 350px;
+
+    }
+
+        
+    .cardnumber {
+        margin-top: 100px;
+        margin-left: -280px;
+        font-size: 18px;
+    }
+
+    .cardname{
+        margin-left: -280px;
+        margin-top: 140px;
+        font-size: 13px;
+    }
+
+    .expmonth{
+        font-size: 13px;
+        margin-top: 140px;
+    }
+
+    .expyear{
+        font-size: 13px;
+        margin-top: 140px;
+        margin-left: -50px;
+    }
+
+    .cvv{
+        margin-top: 72px;
+        margin-left: -70px;
+        font-size: 13px;
+    }
+
+
+}
