@@ -350,8 +350,8 @@ input {
     }
 
     .svg {
-        margin-left: 440px;
-        margin-top: 230px;
+        margin-left: 410px;
+        margin-top: 200px;
     }
         
     .col-9{
@@ -477,31 +477,49 @@ input {
     }
     
     .exp_cvv{
-        position: absolute;
         margin-top: 530px;
         margin-left: 535px;
-        color: hsl(0, 100%, 66%);
+
+    }   
+
+    .card_name_error2{
+        margin-top: 375px;
+        margin-left: 105px;
     }
 
+    .exp_error2{
+        margin-top: 530px;
+        margin-left: 205px;
+        width: 150px;
+    }
+
+    .exp_cvv2{
+        margin-top: 530px;
+        margin-left: 635px;
+        width: 150px;
+    }    
+
     .continue {
-        margin-top: 500px;
-        margin-left: 440px;
+        margin-top: 480px;
+        margin-left: 415px;
         width: 350px;
         height: 50px;
     }
     
     .thankyou {
-            margin-top: 360px;
-            margin-left: 435px;
+            margin-top: 340px;
+            margin-left: 410px;
             font-size: 30px;
             width: 250px;
     }
     
     .carddetails {
-            margin-top: 420px;
-            margin-left: 470px;
+            margin-top: 400px;
+            margin-left: 450px;
             font-size: 20px;
             width: 320px;
         }
+
+
 
 }
