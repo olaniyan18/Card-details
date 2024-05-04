@@ -484,7 +484,8 @@ input {
 
     .card_name_error2{
         margin-top: 375px;
-        margin-left: 105px;
+        margin-left: 210px;
+        width: 150px
     }
 
     .exp_error2{
